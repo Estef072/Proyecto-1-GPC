@@ -20,28 +20,40 @@ rend.glLoadModel("model.obj",
 
 rend.active_texture = Texture("poke.bmp")
 rend.dirLight = V3(0,1,0)
-rend.dirLight2 = V3(-0.5,-0.5,0)
 rend.active_shader = hologram
 rend.glLoadModel("Pokemon.obj",
-                 translate = V3(.5, 3.5, -10),
+                 translate = V3(-.1, 2.5, -10),
                  scale = V3(1.4,1.4,1.4),
                  rotate = V3(5,-180,0))
 
 rend.active_shader = greyscale
 rend.glLoadModel("Mask.obj",
-                 translate = V3(1, 2.5, -10),
-                 scale = V3(12,12,12),
+                 translate = V3(4, 3.6, -10),
+                 scale = V3(11.5,11.5,1.5),
                  rotate = V3(0,0,0))
 
 
-rend.active_texture = Texture("poke.bmp")
-rend.dirLight = V3(0,1,0)
-rend.dirLight2 = V3(-0.5,-0.5,0)
-rend.active_shader = hologram
+rend.active_texture = Texture("tree.bmp")
+rend.active_shader = pinkjelly
 rend.glLoadModel("arbolito.obj",
-                 translate = V3(.5, 3.5, -10),
-                 scale = V3(1.4,1.4,1.4),
+                 translate = V3(-4, -1.6, -10),
+                 scale = V3(.135,.135,.135),
                  rotate = V3(5,-180,0))
+
+
+rend.dirLight = V3(0,1,0)
+rend.active_shader = invertedcolor
+rend.glLoadModel("bolita.obj",
+                 translate = V3(-.1, -.5, -10),
+                 scale = V3(.4,.4,.4),
+                 rotate = V3(5,-180,0))
+
+
+rend.active_shader = toongreyscale
+rend.glLoadModel("flor.obj",
+                 translate = V3(4, -1.6, -10),
+                 scale = V3(2,2,2),
+                 rotate = V3(0,0,0))
 #rend.active_texture = Texture("models/model.bmp")
 #rend.active_shader = gourad
 #rend.glLoadModel("models/model.obj",
